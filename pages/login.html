@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | Reclame Aqui</title>
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
-    
+    <main class="login-page">
+        <section class="login-card" aria-labelledby="login-title">
+            <header class="login-header">
+                <p class="login-brand">RECLAME AQUI</p>
+                <h1 id="login-title">Bem-vindo de volta</h1>
+                <p>Entre para acessar sua conta.</p>
+            </header>
+
+            <form class="login-form" action="#" method="post">
+                <label for="email">E-mail</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="seuemail@exemplo.com"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="password">Senha</label>
+                <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Digite sua senha"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <div class="login-options">
+                    <label class="remember-option" for="remember">
+                        <input id="remember" name="remember" type="checkbox">
+                        <span>Lembrar-me</span>
+                    </label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p class="register-link">
+                Ainda nao tem uma conta?
+                <a href="cadastro.html">Cadastre-se</a>
+            </p>
+        </section>
+    </main>
 </body>
 </html>
