@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font:"poppins", sans-serif;
+}
+body {
+    background-color: #FFF4E8;
+    color: #8B45E8;
+}
+
+header {
+    background-color: #fffaf2;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagina{
+    text-align: center;
+    max-width: 1050px;
+    margin: 25px auto;
+    padding: 0 25px;
+}
+h2,p{
+    color: #5425B8;
+}
+
+.editar {
+    background-color: #FFC83D;
+    color: #5425B8;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.numeros {
+    max-width:200px;
+    margin: 0 auto 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.numero {
+    background-color: #fffaf5;
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px;
+}
+
+.numero strong {
+    display: block;
+    font-size: 23px;
+}
+
+.conteudo {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 12px 0 8px;
+}
+
+.sobre {
+    background-color: #fffaf5;
+    padding: 15px;
+    border-radius: 8px;
+    color: #927db9;
+}
+
+.novo-desabafo {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color:#FFC83D;
+    color: #5425B8;
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.publicacao {
+    background-color: #fffaf5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
