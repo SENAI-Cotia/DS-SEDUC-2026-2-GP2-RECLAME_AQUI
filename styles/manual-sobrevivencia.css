@@ -23,18 +23,28 @@ header p{
      margin-left: 2px;
 }
 
-.imagem img{
-    max-width: 200px;
+.imagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    background-color: white;
+    height: 110px;
+    
+}
+
+.imagem img {
+    width: 250px;
+    max-width: 200px;
     margin-top: 20px;
     margin-left: 15px;
 }
 
-.imagem{
-      background-color: white;
-    width: 100%;
-    max-width: 100%;
-    height: 110px;
+.perfil {
+    margin-right: 30px;
+     font-family: "Poppins", sans-serif;
+     color: #8B45E8;
+
 }
 
 .mensagem{
@@ -139,6 +149,13 @@ header p{
     font-size: 20px;
     color: #5425B8;
 }
+
+.link-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 
 
 
