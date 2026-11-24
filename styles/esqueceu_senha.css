@@ -1,22 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .campo {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 0 10px;
+    color: #5425B8;
+    opacity: 0.8;
+    border: 2px solid #FFC83D;
+    max-width: 590px;
+    width: 100%;
+    margin: 0  auto;
+    height: 50px;
+}
+
+.email label{
+    margin-left: 50px;
+    margin-bottom: 6px;
+    display: block;
 }
 
 .campo i {
-    color: #888;
     margin-right: 10px;
+    
 }
 
 .campo input {
     border: none;
     outline: none;
     padding: 12px;
-    width: 100%;
+    width: 100%; 
+    
+
 }
+
+.campo input::placeholder {
+    color: #5425B8;
+     font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+opacity: 0.6;}
 
 body{
     background-color: #FFF4E8;
@@ -34,8 +61,84 @@ header{
       max-width: 100%;
     width: 100%;
     height: 110px;
+    
+
 }
 
 .esqueci{
     background-color: white;
+     margin: 0 auto;
+     display: block;
+    max-width: 700px;
+    margin-top: 61px;
+   height: 530px;
+   border-radius: 20px;
+box-shadow: 0px 1px 5px 1px #9979dc; 
 }
+
+
+
+.esqueci img{
+max-width: 150px;
+    margin: 0 auto;
+    display: block;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+.esqueci h1{
+     font-family: "Poppins", sans-serif;
+    color: #5425B8;
+    text-align: center;
+}
+
+.esqueci h2{
+     font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #8C8B8A;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.email label{
+    color: #5425B8;
+     font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.enviar button{
+  max-width: 590px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 0;
+  margin: 0 auto;
+  background-color: #5425B8;
+  margin-top: 20px;
+  
+
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+}
+
+.esqueci a{
+     font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5425B8;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+
+
