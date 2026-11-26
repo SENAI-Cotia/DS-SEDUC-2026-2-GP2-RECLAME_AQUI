@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu lateral */
+.menu {
+    max-width: 250px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #5425B8;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 110px;
+    
+
+    /* Mantém o menu fixo na tela */
+    position: fixed;
+
+    /* Posiciona o menu no canto superior esquerdo */
+    top: 0;
+    left: 0;
+
+    /* Faz o menu ficar atrás do botão */
+    z-index: 3;
+
+    /* Esconde o menu deslocando-o para a esquerda */
+    transform: translateX(-100%);
+
+    /* Cria uma animação suave de 0.4 segundo */
+    transition: transform 0.4s ease;
+}
+/* qnd clica no hamburguer o menu aparece,
+ e qnd clica dnv ele se esconde */
+ /*  <input type="checkbox" id="menu-hamburguer">
+ */
+/* Quando o checkbox estiver marcado, o menu aparece */
+#menu-hamburguer:checked ~ .menu {
+    /* Devolve o menu à posição original */
+    transform: translateX(0);
+}
+
+/* Usuário */
+
+.usuario {
+    margin-bottom: 55px;
+    margin-top: 60px;
+}
+
+.usuario h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* o espaçamento do ola usuario */
+.usuario i {
+    margin-right: 8px;
+}
+
+/* Links do menu */
+
+.menu nav {
+    /* faz tds os links caber dentro do menu */
+    display: flex;
+    /* ele organiza um em baixo do outro */
+    flex-direction: column;
+     /*espaçamento entre cada elemento  */
+    gap: 10px;
+}
+
+/*  os links  */
+.menu nav a {
+    display: flex;
+    align-items: center;
+    /* organiza na vertical */
+    gap: 14px;
+    text-decoration: none;
+    /* tira a linha de baixo do link */
+    color: white;
+    font-size: 15px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Ícones */
+
+.menu nav a i {
+    width: 25px;
+    /* centraliza os icones */
+    text-align: center;
+}
+
+/* Página selecionada */
+
+.menu nav a.ativo {
+    /* faz com q o fundo do link
+     clicado fique um roxo mais claro */
+     /* caso precise deixar outra parte roxinha, faça isso */
+     /* <a href="#" class="ativo">
+            <i class="fa-solid fa-house"></i>
+            Início
+        </a>
+ */
+ /* apenas modifique como por exemplo
+  colocar no sobre, etc. */
+    background-color: #8B42E8;
+}
+
+/* Efeito ao passar o mouse */
+
+.menu nav a:hover {
+    /* qnd passar o mouse
+     vai ficar roxo mais claro */
+    background-color: #8B42E8;
+}
+
+/* Esconde o quadradinho de selecionar */
+#menu-hamburguer {
+    display: none;
+}
+
+/* Botão hambúrguer */
+.btn-menu {
+    font-size: 30px;
+    color: white;
+    background-color: #5425B8;
+    cursor: pointer;
+    border-radius: 6px;
+
+    width: 38px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 130px;
+    left: 20px;
+
+    z-index: 4;
+}
+
+/* faz o conteudo ficar do outro lado , msm dps de fechar o menu */
+.conteudo {
+    width: 100%;
+    padding: 30px;
+    margin-left: 250px;
+}
+/* faz com q td fique lado a lado, "menu" | "conteudo"  */
+.pagina {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 200px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 100%;
+    width: 100%;
+    height: 110px !important;
+    
+}
+
+
+.nav-header a {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 20px;
+}
+
+.nav-header {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 100px;
+}
+
+
+/* ===== RESET E VARIÁVEIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo: #9333ea;
+    --roxo-escuro: #5b21b6;
+    --amarelo: #fec83a;
+    --creme: #fef3e6;
+    --branco: #ffffff;
+    --cinza: #8a8a8a;
+}
+
+body {
+     font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    background-color: var(--creme);
+   
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    height: 94px;
+     height: 94px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-header a {
+    text-decoration: none;
+    color: var(--roxo-escuro);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ===== PÁGINA ===== */
+.pagina {
+    position: relative;
+    padding: 30px 28px 50px;
+}
+
+
+
+/* ===== CONTEÚDO ===== */
+.conteudo {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: none;
+}
+
+main h1 {
+    color: var(--roxo);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main h1::after {
+    content: "♥";
+    margin-left: 12px;
+}
+
+main p {
+    color: var(--cinza);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+main p::first-letter {
+    text-transform: uppercase;
+}
+
+/* ===== BOX (GRID) =====
+   O banner roxo é um pseudo-elemento que ocupa as linhas 1 a 3,
+   e o h2, o p e o botão ficam por cima dele. */
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 27px;
+    row-gap: 0;
+}
+
+.box::before {
+    content: "";
+    grid-column: 1 / -1;
+    grid-row: 1 / 4;
+    background-color: var(--roxo-escuro);
+    border-radius: 6px;
+}
+
+/* Textos do banner */
+.box > h2:nth-of-type(1) {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 28px 8px;
+}
+
+.box > p {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    color: var(--branco);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 28px 18px;
+}
+
+.box > h2:nth-of-type(1)::first-letter,
+.box > p::first-letter {
+    text-transform: uppercase;
+}
+
+.btn {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: block;
+    background-color: var(--amarelo);
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 28px 24px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn:hover {
+    filter: brightness(0.95);
+}
+
+/* Títulos de seção */
+.box > h2:nth-of-type(2) {
+    grid-column: 1 / -1;
+    color: var(--roxo);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 28px 0 8px 6px;
+}
+
+.box > h2:nth-of-type(3) {
+    grid-column: 1 / -1;
+    color: var(--roxo);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 28px 0 18px 6px;
+}
+
+/* ===== CARDS ===== */
+.box1,
+.box2,
+.box3,
+.box4 {
+    background-color: var(--branco);
+    border-radius: 6px;
+    padding: 16px 26px;
+    min-height: 90px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(147, 51, 234, 0.15);
+}
+
+.box1 span,
+.box2 span,
+.box3 span,
+.box4 span {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.box1 h3,
+.box2 h3,
+.box3 h3,
+.box4 h3 {
+    color: var(--roxo);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ===== DESABAFOS RECENTES ===== */
+.box5 {
+    grid-column: 1 / -1;
+    background-color: var(--branco);
+    padding: 16px 28px;
+    border-radius: 4px;
+    margin: 0 6px;
+}
+
+.box5 h3 {
+    color: var(--roxo);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.box5 p {
+    color: var(--cinza);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 700px) {
+    header {
+        padding: 10px 16px;
+    }
+
+    .conteudo {
+        padding-top: 50px;
+    }
+
+    main h1 {
+        font-size: 22px;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+    }
+}
