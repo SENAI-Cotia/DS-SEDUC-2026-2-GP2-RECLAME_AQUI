@@ -199,36 +199,46 @@ header {
 
 .conteudos {
     margin-left: 250px;
-    margin-top: 104px;
+    margin-top: 0px;
     padding: 25px;
-    font-family: "Poppins", sans-serif;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .conteudos h1 {
     color: #5425b8;
     font-size: 34px;
     margin-bottom: 18px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
 }
 
 .descricao {
     color: #888;
-    font-size: 16px;
-    margin-bottom: 17px;
+    font-size: 18px;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    
+    
 }
 
 .formulario {
+    width: 100%;
+    max-width: 800px;
     background-color: #fff;
-    padding: 18px;
-    border-radius: 15px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .formulario label {
     color: #5425B8;
     font-size: 16px;
+    display: block;
+    margin: 18px 0 8px;
 }
 
 .formulario input[type="text"] {
@@ -238,14 +248,15 @@ header {
     border: 1px solid #ddd;
     border-radius: 12px;
     font-size: 16px;
-    
+    box-sizing: border-box;
+    margin-bottom: 18px;
 }
 
 .categorias {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 .categorias span {
@@ -270,6 +281,7 @@ header {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     resize: none;
+    box-sizing: border-box;
 }
 
 .btn-photo {
@@ -286,21 +298,23 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: 18px auto 10px;
 }
 
 .btn-submit {
     background-color: #5425B8;
     color: white;
     border: none;
-    padding: 15px 400px;
+    padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
     width: 100%;
-    
-    
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: 10px auto 20px;
 }
 
 body{
