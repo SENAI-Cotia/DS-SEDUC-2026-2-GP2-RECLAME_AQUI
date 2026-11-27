@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reclame Aqui da Vida | Criar desabafo</title>
+
+    <script src="https://kit.fontawesome.com/870e23b194.js"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/mural_de_reclamacoes.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <!-- Quando a logo da empresa estiver pronta, apague as marcas de comentário da linha abaixo -->
+            <!-- <img src="../img/logo-removebg-preview.png" alt="Reclame Aqui da Vida"> -->
+        </div>
+
+        <nav class="nav-header">
+            <a href="hall.html" title="Notificações">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <a href="perfil.html">
+                Meu perfil
+            </a>
+
+        </nav>
+
+    </header>
+
+    <input type="checkbox" id="menu-hamburguer" checked>
+
+    <label for="menu-hamburguer" class="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+
+    <div class="pagina">
+
+        <div class="menu">
+
+            <div class="usuario">
+                <h3>
+                    <i class="fa-solid fa-face-smile"></i>
+                    Olá, usuário!
+                </h3>
+            </div>
+
+            <nav>
+
+                <a href="home.html">
+                    <i class="fa-solid fa-house"></i>
+                    Início
+                </a>
+
+                <a href="hall.html">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    Feed público
+                </a>
+
+                <a href="mural_de_reclamacoes.html" class="ativo">
+                    <i class="fa-solid fa-plus"></i>
+                    Criar desabafo
+                </a>
+
+                <a href="amizades.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Amizades
+                </a>
+
+                <a href="perfil.html">
+                    <i class="fa-solid fa-user"></i>
+                    Meu perfil
+                </a>
+
+                <a href="configuracoes.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Configurações
+                </a>
+
+                <a href="sobre.html">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    Sobre nós
+                </a>
+
+            </nav>
+
+            <div class="menu-footer">
+                <p>Um espaço para desabafar.</p>
+                <span>Reclame Aqui da Vida © 2026</span>
+            </div>
+
+        </div>
+
+        <div class="conteudo">
+
+            <main>
+
+                <div class="banner">
+
+                    <div>
+                        <h1>Mural de Reclamações</h1>
+
+                        <p>
+                            Olá, usuário! Sua experiência merece ser ouvida.
+                        </p>
+                    </div>
+
+                    <a href="solucionar_problema.html" class="ajuda">
+
+                        <i class="fa-regular fa-comment"></i>
+
+                        <span>
+                            Como solucionar<br>
+                            um problema
+                        </span>
+
+                    </a>
+
+                </div>
+
+                <section class="criador">
+
+                    <div class="perfil-criador">
+
+                        <div class="avatar">P</div>
+
+                        <div>
+                            <strong>Olá, usuário!</strong>
+                            <small>Compartilhe sua experiência</small>
+                        </div>
+
+                    </div>
+
+                    <form class="form-desabafo">
+
+                        <div class="categoria">
+                            <span>#</span>
+
+                            <input type="text"
+                                placeholder="Escolha uma categoria"
+                                aria-label="Categoria">
+                        </div>
+
+                        <textarea
+                            placeholder="Conte o que aconteceu..."
+                            maxlength="500"
+                            aria-label="Escreva seu desabafo"></textarea>
+
+                        <div class="form-acoes">
+
+                            <div class="opcoes">
+
+                                <label class="adicionar-imagem">
+
+                                    <i class="fa-regular fa-image"></i>
+                                    Adicionar imagem
+
+                                    <input type="file"
+                                        accept="image/*"
+                                        hidden>
+
+                                </label>
+
+                                <label class="anonimo">
+
+                                    <input type="checkbox">
+                                    Definir como Anônimo
+
+                                </label>
+
+                            </div>
+
+                            <button type="submit">
+                                Enviar
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+                <section class="feed">
+
+                    <div class="abas">
+
+                        <button class="aba ativa" data-filtro="recentes">
+                            Mais Recentes
+                        </button>
+
+                        <button class="aba" data-filtro="alta">
+                            Em Alta
+                        </button>
+
+                        <button class="aba" data-filtro="amigos">
+                            Só Amigos
+                        </button>
+
+                        <button class="aba" data-filtro="apoio">
+                            Precisando de Apoio
+                        </button>
+
+                    </div>
+
+                    <div class="pesquisa">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="search"
+                            placeholder="Buscar reclamações ou #tags..."
+                            aria-label="Buscar reclamações">
+
+                    </div>
+
+                    <div class="lista-reclamacoes">
+
+                        <article class="reclamacao">
+
+                            <div class="reclamacao-topo">
+
+                                <div class="avatar">P</div>
+
+                                <div class="informacoes-usuario">
+
+                                    <a href="perfil.html" class="nome-usuario">
+                                        Paulo
+                                    </a>
+
+                                    <span class="tag">
+                                        #Relacionamento
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="texto-reclamacao">
+                                A pessoa diz que "tanto faz" o que vamos
+                                comer, mas recusa as minhas sete primeiras
+                                sugestões e ainda fica emburrada. Quero
+                                abrir reclamação por propaganda enganosa.
+                            </p>
+
+                            <div class="reclamacao-rodape">
+
+                                <span class="tempo">
+                                    47 segundos atrás
+                                </span>
+
+                                <div class="interacoes">
+
+                                    <button class="interacao curtir"
+                                        aria-label="Curtir reclamação">
+
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>3</span>
+
+                                    </button>
+
+                                    <button class="interacao"
+                                        aria-label="Comentários">
+
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>1</span>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="reclamacao">
+
+                            <div class="reclamacao-topo">
+
+                                <div class="avatar">W</div>
+
+                                <div class="informacoes-usuario">
+
+                                    <a href="perfil.html" class="nome-usuario">
+                                        Wagner
+                                    </a>
+
+                                    <span class="tag">
+                                        #Inclusão
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="texto-reclamacao">
+                                Fui a um restaurante e as cadeiras eram tão
+                                estreitas que pareciam feitas para bonecos.
+                                Revoltante como tantos lugares ignoram que
+                                pessoas gordas existem e precisam de conforto.
+                            </p>
+
+                            <div class="reclamacao-rodape">
+
+                                <span class="tempo">
+                                    1 minuto atrás
+                                </span>
+
+                                <div class="interacoes">
+
+                                    <button class="interacao curtir"
+                                        aria-label="Curtir reclamação">
+
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>6</span>
+
+                                    </button>
+
+                                    <button class="interacao"
+                                        aria-label="Comentários">
+
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>2</span>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="reclamacao">
+
+                            <div class="reclamacao-topo">
+
+                                <div class="avatar">S</div>
+
+                                <div class="informacoes-usuario">
+
+                                    <a href="perfil.html" class="nome-usuario">
+                                        Samuel
+                                    </a>
+
+                                    <span class="tag">
+                                        #Convivência
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="texto-reclamacao">
+                                Tem gente que sorri na sua frente e chama
+                                de amigo, mas na primeira oportunidade fala
+                                mal pelas costas. Faltou um selo de aviso
+                                na testa para evitar esse prejuízo.
+                            </p>
+
+                            <div class="reclamacao-rodape">
+
+                                <span class="tempo">
+                                    3 minutos atrás
+                                </span>
+
+                                <div class="interacoes">
+
+                                    <button class="interacao curtir"
+                                        aria-label="Curtir reclamação">
+
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>12</span>
+
+                                    </button>
+
+                                    <button class="interacao"
+                                        aria-label="Comentários">
+
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>4</span>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <article class="reclamacao">
+
+                            <div class="reclamacao-topo">
+
+                                <div class="avatar">K</div>
+
+                                <div class="informacoes-usuario">
+
+                                    <a href="perfil.html" class="nome-usuario">
+                                        Kaio
+                                    </a>
+
+                                    <span class="tag">
+                                        #VidaFinanceira
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="texto-reclamacao">
+                                "Abri o app do banco e já deu vontade de
+                                cancelar o mês. O dinheiro cai na conta e
+                                evapora com as contas básicas antes mesmo
+                                de eu conseguir comprar qualquer coisa pra mim."
+                            </p>
+
+                            <div class="reclamacao-rodape">
+
+                                <span class="tempo">
+                                    7 minutos atrás
+                                </span>
+
+                                <div class="interacoes">
+
+                                    <button class="interacao curtir"
+                                        aria-label="Curtir reclamação">
+
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>24</span>
+
+                                    </button>
+
+                                    <button class="interacao"
+                                        aria-label="Comentários">
+
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>8</span>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        document.querySelectorAll(".curtir").forEach(function (botao) {
+
+            botao.addEventListener("click", function () {
+
+                const contador = botao.querySelector("span");
+                const icone = botao.querySelector("i");
+
+                const curtido = botao.classList.toggle("curtido");
+
+                let quantidade = Number(contador.textContent);
+
+                if (curtido) {
+
+                    quantidade++;
+
+                    icone.classList.remove("fa-regular");
+                    icone.classList.add("fa-solid");
+
+                } else {
+
+                    quantidade--;
+
+                    icone.classList.remove("fa-solid");
+                    icone.classList.add("fa-regular");
+
+                }
+
+                contador.textContent = quantidade;
+
+            });
+
+        });
+
+        const campoPesquisa = document.querySelector(".pesquisa input");
+
+        campoPesquisa.addEventListener("input", function () {
+
+            const pesquisa = campoPesquisa.value.toLowerCase();
+
+            document.querySelectorAll(".reclamacao").forEach(function (card) {
+
+                const texto = card.textContent.toLowerCase();
+
+                card.style.display = texto.includes(pesquisa)
+                    ? "flex"
+                    : "none";
+
+            });
+
+        });
+
+        document.querySelectorAll(".aba").forEach(function (aba) {
+
+            aba.addEventListener("click", function () {
+
+                document.querySelectorAll(".aba").forEach(function (outraAba) {
+                    outraAba.classList.remove("ativa");
+                });
+
+                aba.classList.add("ativa");
+
+            });
+
+        });
+
+        document.querySelector(".form-desabafo").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const texto = document.querySelector(".form-desabafo textarea").value.trim();
+
+            if (texto === "") {
+
+                alert("Escreva seu desabafo antes de enviar!");
+
+                return;
+
+            }
+
+            alert("Seu desabafo foi preenchido com sucesso!");
+
+            document.querySelector(".form-desabafo textarea").value = "";
+
+        });
+
+    </script>
+
+</body>
+</html>
