@@ -208,7 +208,7 @@ header {
    box-shadow: 2px 2px 8px 2px #FF7139;
    margin-bottom: 30px;
 }
-
+  
 .banner img{
     max-width: 120px;
     margin: 15px;
@@ -289,7 +289,7 @@ body{
 }
 
 .titulo{
-    margin-left: 150px;
+    margin-left: 350px;
     font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
