@@ -1,12 +1,175 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/produtos.css">
+
+    <title>Feed público</title>
+
+    <script src="https://kit.fontawesome.com/870e23b194.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/produtos.css">
 </head>
+
 <body>
-    
+
+<header>
+    <div class="logo">
+        <img src="../img/logo-removebg-preview.png" alt="Logo">
+    </div>
+
+    <nav class="nav-header">
+        <a href="#">🔔</a>
+        <a href="#">Meu perfil</a>
+    </nav>
+</header>
+
+<input type="checkbox" id="menu-hamburguer">
+
+<label for="menu-hamburguer" class="btn-menu">
+    <i class="fa-solid fa-bars"></i>
+</label>
+
+<div class="menu">
+
+    <div class="usuario">
+        <h3>
+            <i class="fa-solid fa-face-smile"></i>
+            Olá, usuário!
+        </h3>
+    </div>
+
+    <nav>
+        <a href="#" class="ativo"><i class="fa-solid fa-house"></i> Início</a>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i> Feed público</a>
+        <a href="#"><i class="fa-solid fa-plus"></i> Criar desabafo</a>
+        <a href="#"><i class="fa-solid fa-user-plus"></i> Amizades</a>
+        <a href="#"><i class="fa-solid fa-user"></i> Meu perfil</a>
+        <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+        <a href="#"><i class="fa-solid fa-bullhorn"></i> Sobre nós</a>
+    </nav>
+
+</div>
+
+<main class="conteudo">
+
+    <div class="feed">
+
+        <h1>Feed público <i class="fa-solid fa-bullhorn"></i></h1>
+
+        <p class="sub">Veja o que a comunidade está compartilhando</p>
+
+        <section class="card novo">
+            <h2>O que está acontecendo?</h2>
+
+            <p class="dica">Compartilhe seus sentimentos...</p>
+
+            <a href="#" class="btn-criar">
+                <i class="fa-solid fa-plus"></i>
+                Criar desabafo
+            </a>
+        </section>
+
+        <div class="filtros">
+
+            <input type="radio" name="filtro" id="f-todos" checked>
+            <label for="f-todos" class="chip">Todos</label>
+
+            <input type="radio" name="filtro" id="f-escola">
+            <label for="f-escola" class="chip">Escola</label>
+
+            <input type="radio" name="filtro" id="f-familia">
+            <label for="f-familia" class="chip">Família</label>
+
+            <input type="radio" name="filtro" id="f-amizades">
+            <label for="f-amizades" class="chip">Amizades</label>
+
+            <input type="radio" name="filtro" id="f-cotidiano">
+            <label for="f-cotidiano" class="chip">Cotidiano</label>
+
+        </div>
+
+        <!-- POST 1 -->
+        <article class="card post" data-cat="cotidiano">
+
+            <div class="autor">
+                <span class="avatar">JD</span> Lucas
+            </div>
+
+            <h3>Que semana complicada...</h3>
+
+            <p>Parece que nada dá certo ultimamente.</p>
+
+            <div class="acoes">
+
+                <input type="checkbox" id="curtir-1" class="curtir-input">
+
+                <label for="curtir-1" class="curtir">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    Curtir
+                </label>
+
+                <button>Comentar</button>
+                <button>Compartilhar</button>
+
+            </div>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="card post" data-cat="cotidiano">
+
+            <div class="autor">MR Mariana</div>
+
+            <h3>Finalmente chegou o final de semana!</h3>
+
+            <p>Depois de uma semana cheia de provas e trabalhos, finalmente vou poder descansar.</p>
+
+            <div class="acoes">
+
+                <input type="checkbox" id="curtir-2" class="curtir-input">
+
+                <label for="curtir-2" class="curtir">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    Curtir
+                </label>
+
+                <button>Comentar</button>
+                <button>Compartilhar</button>
+
+            </div>
+        </article>
+
+        <!-- POST 3 -->
+        <article class="card post" data-cat="cotidiano">
+
+            <div class="autor">PC Pedro</div>
+
+            <h3>Alguém mais está cansado?</h3>
+
+            <p>Tem dias que tudo o que a gente precisa é de um tempo para relaxar e esquecer os problemas.</p>
+
+            <div class="acoes">
+
+                <input type="checkbox" id="curtir-3" class="curtir-input">
+
+                <label for="curtir-3" class="curtir">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    Curtir
+                </label>
+      
+                <button>Comentar</button>
+                <button>Compartilhar</button>
+
+            </div>
+        </article>
+
+    </div>
+
+</main>
+
 </body>
 </html>
