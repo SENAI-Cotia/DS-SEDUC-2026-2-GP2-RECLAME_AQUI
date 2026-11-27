@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,41 +15,52 @@
 </head>
 
 <body>
-    <header>
 
-        <div class="logo">
-            <!-- Quando a logo da empresa estiver pronta, apague as marcas de comentário da linha abaixo -->
-            <!-- <img src="../img/logo-removebg-preview.png" alt="Reclame Aqui da Vida"> -->
-        </div>
+    <!-- CABEÇALHO -->
+    <section class="contentHeader">
 
-        <nav class="nav-header">
-            <a href="hall.html" title="Notificações">
-                <i class="fa-solid fa-bell"></i>
-            </a>
+        <header>
 
-            <a href="perfil.html">
-                Meu perfil
-            </a>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Reclame Aqui da Vida">
+            </div>
 
-        </nav>
+            <nav class="nav-header">
 
-    </header>
+                <a href="hall.html" title="Notificações">
+                    <i class="fa-solid fa-bell"></i>
+                </a>
 
-    <input type="checkbox" id="menu-hamburguer" checked>
+                <a href="perfil.html">
+                    Meu perfil
+                </a>
+
+            </nav>
+
+        </header>
+
+    </section>
+
+    <!-- BOTÃO MENU HAMBÚRGUER -->
+    <input type="checkbox" id="menu-hamburguer">
 
     <label for="menu-hamburguer" class="btn-menu">
         <i class="fa-solid fa-bars"></i>
     </label>
 
+    <!-- ESTRUTURA DA PÁGINA -->
     <div class="pagina">
 
+        <!-- MENU LATERAL -->
         <div class="menu">
 
             <div class="usuario">
+
                 <h3>
                     <i class="fa-solid fa-face-smile"></i>
                     Olá, usuário!
                 </h3>
+
             </div>
 
             <nav>
@@ -97,18 +109,22 @@
 
         </div>
 
+        <!-- CONTEÚDO PRINCIPAL -->
         <div class="conteudo">
 
             <main>
 
+                <!-- BANNER -->
                 <div class="banner">
 
                     <div>
+
                         <h1>Mural de Reclamações</h1>
 
                         <p>
                             Olá, usuário! Sua experiência merece ser ouvida.
                         </p>
+
                     </div>
 
                     <a href="solucionar_problema.html" class="ajuda">
@@ -124,6 +140,7 @@
 
                 </div>
 
+                <!-- CRIAR DESABAFO -->
                 <section class="criador">
 
                     <div class="perfil-criador">
@@ -140,11 +157,14 @@
                     <form class="form-desabafo">
 
                         <div class="categoria">
+
                             <span>#</span>
 
-                            <input type="text"
+                            <input
+                                type="text"
                                 placeholder="Escolha uma categoria"
                                 aria-label="Categoria">
+
                         </div>
 
                         <textarea
@@ -161,7 +181,8 @@
                                     <i class="fa-regular fa-image"></i>
                                     Adicionar imagem
 
-                                    <input type="file"
+                                    <input
+                                        type="file"
                                         accept="image/*"
                                         hidden>
 
@@ -186,6 +207,7 @@
 
                 </section>
 
+                <!-- FEED DE RECLAMAÇÕES -->
                 <section class="feed">
 
                     <div class="abas">
@@ -208,11 +230,13 @@
 
                     </div>
 
+                    <!-- PESQUISA -->
                     <div class="pesquisa">
 
                         <i class="fa-solid fa-magnifying-glass"></i>
 
-                        <input type="search"
+                        <input
+                            type="search"
                             placeholder="Buscar reclamações ou #tags..."
                             aria-label="Buscar reclamações">
 
@@ -220,6 +244,7 @@
 
                     <div class="lista-reclamacoes">
 
+                        <!-- RECLAMAÇÃO 1 -->
                         <article class="reclamacao">
 
                             <div class="reclamacao-topo">
@@ -277,6 +302,7 @@
 
                         </article>
 
+                        <!-- RECLAMAÇÃO 2 -->
                         <article class="reclamacao">
 
                             <div class="reclamacao-topo">
@@ -334,6 +360,7 @@
 
                         </article>
 
+                        <!-- RECLAMAÇÃO 3 -->
                         <article class="reclamacao">
 
                             <div class="reclamacao-topo">
@@ -390,6 +417,8 @@
                             </div>
 
                         </article>
+
+                        <!-- RECLAMAÇÃO 4 -->
                         <article class="reclamacao">
 
                             <div class="reclamacao-topo">
@@ -411,10 +440,10 @@
                             </div>
 
                             <p class="texto-reclamacao">
-                                "Abri o app do banco e já deu vontade de
+                                Abri o app do banco e já deu vontade de
                                 cancelar o mês. O dinheiro cai na conta e
                                 evapora com as contas básicas antes mesmo
-                                de eu conseguir comprar qualquer coisa pra mim."
+                                de eu conseguir comprar qualquer coisa pra mim.
                             </p>
 
                             <div class="reclamacao-rodape">
@@ -457,8 +486,10 @@
 
     </div>
 
+    <!-- JAVASCRIPT -->
     <script>
 
+        // CURTIR RECLAMAÇÕES
         document.querySelectorAll(".curtir").forEach(function (botao) {
 
             botao.addEventListener("click", function () {
@@ -492,6 +523,8 @@
 
         });
 
+
+        // PESQUISAR RECLAMAÇÕES
         const campoPesquisa = document.querySelector(".pesquisa input");
 
         campoPesquisa.addEventListener("input", function () {
@@ -510,12 +543,16 @@
 
         });
 
+
+        // SELECIONAR ABAS
         document.querySelectorAll(".aba").forEach(function (aba) {
 
             aba.addEventListener("click", function () {
 
                 document.querySelectorAll(".aba").forEach(function (outraAba) {
+
                     outraAba.classList.remove("ativa");
+
                 });
 
                 aba.classList.add("ativa");
@@ -524,6 +561,8 @@
 
         });
 
+
+        // ENVIAR DESABAFO
         document.querySelector(".form-desabafo").addEventListener("submit", function (event) {
 
             event.preventDefault();
@@ -547,4 +586,5 @@
     </script>
 
 </body>
+
 </html>
