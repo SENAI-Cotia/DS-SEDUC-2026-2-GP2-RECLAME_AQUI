@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Como Solucionar | Reclame Aqui da Vida</title>
+
+    <link rel="stylesheet" href="../styles/solucionar_problema.css">
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <div class="logo">
+            <!-- Quando tiver a logo, apague as marcas de comentário da linha abaixo -->
+            <!-- <img src="../images/logo.png" alt="Logo da empresa"> -->
+        </div>
+
+        <div class="perfil">
+            <span class="sino">♟</span>
+            <a href="#">Meu perfil</a>
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <a href="mural_de_reclamacoes.html" class="voltar" title="Voltar ao mural">↶</a>
+
+        <section class="introducao">
+
+            <span class="subtitulo">NÃO SABE O QUE FAZER?</span>
+
+            <h1>COMO SOLUCIONAR UM PROBLEMA</h1>
+
+            <p>
+                Escolha o tipo de perrengue ou siga o passo a passo rápido
+            </p>
+
+        </section>
+
+        <div class="pesquisa">
+
+            <span class="lupa"></span>
+
+            <input
+                type="text"
+                id="campoPesquisa"
+                placeholder="Qual é o seu problema hoje? Ex: Boleto, Relacionamento, Trabalho..."
+            >
+
+            <button id="limparPesquisa" title="Limpar pesquisa">✕</button>
+
+        </div>
+
+        <section class="passos">
+
+            <div class="passo">
+                <span class="numero">1</span>
+                <span class="icone-passo">💬</span>
+                <p>DESABAFE NO<br>MURAL</p>
+            </div>
+
+            <div class="passo">
+                <span class="numero">2</span>
+                <span class="icone-passo">👥</span>
+                <p>OUÇA A<br>COMUNIDADE</p>
+            </div>
+
+            <div class="passo">
+                <span class="numero">3</span>
+                <span class="icone-passo">⏰</span>
+                <p>REGRA DAS<br>24 HORAS</p>
+            </div>
+
+            <div class="passo">
+                <span class="numero">4</span>
+                <span class="icone-passo">⭐</span>
+                <p>MARQUE COMO<br>SUPERADO</p>
+            </div>
+
+        </section>
+
+        <section class="secao-guias">
+
+            <div class="titulo-guias">
+
+                <div>
+                    <h2>Guia Rápido por Situações</h2>
+                    <p>Encontre algumas dicas para lidar com seus problemas.</p>
+                </div>
+
+                <span class="contador" id="contador">
+                    3 situações
+                </span>
+
+            </div>
+
+
+            <div class="guias" id="listaGuias">
+
+                <article class="guia aberto">
+
+                    <div class="guia-cabecalho">
+
+                        <span class="tag financeira">#VidaFinanceira</span>
+
+                        <h3>O dinheiro acabou antes do mês terminar</h3>
+
+                        <button class="seta" aria-label="Expandir situação">
+                            ⌃
+                        </button>
+
+                    </div>
+
+                    <div class="guia-conteudo">
+
+                        <p>
+                            Feche o app do banco, respire fundo e corte os
+                            gastos extras da semana. Compartilhe no mural
+                            para ver dicas da comunidade.
+                        </p>
+
+                        <div class="guia-rodape">
+
+                            <label>
+                                <input type="checkbox">
+                                Visualizar
+                            </label>
+
+                            <a href="mural.html" class="botao-desabafo">
+                                + Criar desabafo
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="guia">
+
+                    <div class="guia-cabecalho">
+
+                        <span class="tag relacionamento">#Relacionamento</span>
+
+                        <h3>Discussão ou clima no relacionamento</h3>
+
+                        <button class="seta" aria-label="Expandir situação">
+                            ⌄
+                        </button>
+
+                    </div>
+
+                    <div class="guia-conteudo">
+
+                        <p>
+                            Respire, organize seus pensamentos e tente
+                            conversar com calma. Ouvir o outro lado também
+                            pode ajudar a resolver a situação.
+                        </p>
+
+                        <div class="guia-rodape">
+
+                            <label>
+                                <input type="checkbox">
+                                Visualizar
+                            </label>
+
+                            <a href="mural.html" class="botao-desabafo">
+                                + Criar desabafo
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="guia">
+
+                    <div class="guia-cabecalho">
+
+                        <span class="tag convivencia">#Convivência</span>
+
+                        <h3>Lidando com pessoas falsas</h3>
+
+                        <button class="seta" aria-label="Expandir situação">
+                            ⌄
+                        </button>
+
+                    </div>
+
+                    <div class="guia-conteudo">
+
+                        <p>
+                            Estabeleça limites, valorize quem demonstra
+                            confiança e não se sinta obrigado a agradar
+                            todo mundo. Cuide do seu bem-estar.
+                        </p>
+
+                        <div class="guia-rodape">
+
+                            <label>
+                                <input type="checkbox">
+                                Visualizar
+                            </label>
+
+                            <a href="mural.html" class="botao-desabafo">
+                                + Criar desabafo
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <p class="sem-resultados" id="semResultados">
+                    Nenhuma situação encontrada. Tente pesquisar outro termo.
+                </p>
+
+            </div>
+
+        </section>
+
+        <footer class="mensagem-final">
+
+            <span>💜</span>
+
+            <p>
+                Todo problema merece atenção.
+                Um passo de cada vez, você consegue!
+            </p>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
