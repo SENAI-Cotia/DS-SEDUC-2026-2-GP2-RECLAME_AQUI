@@ -1,33 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
+.contentHeader {
+    background: #fff;
 }
 
 /* Menu lateral */
 .menu {
     max-width: 250px;
     width: 100%;
-    min-height: 100vh;
+    /* height: calc(100vh - 110px); */
+    height: 100vh;
+
+    margin-top: 110px;
+
     background-color: #5425B8;
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 110px;
-    
 
-    /* Mantém o menu fixo na tela */
     position: fixed;
-
-    /* Posiciona o menu no canto superior esquerdo */
-    top: 0;
+    /* top: 0; */
+    top: -110px;
     left: 0;
-
-    /* Faz o menu ficar atrás do botão */
     z-index: 3;
 
-    /* Esconde o menu deslocando-o para a esquerda */
-    transform: translateX(-100%);
-
-    /* Cria uma animação suave de 0.4 segundo */
+    transform: translateX(-100%); 
     transition: transform 0.4s ease;
 }
 /* qnd clica no hamburguer o menu aparece,
@@ -39,9 +33,7 @@
     /* Devolve o menu à posição original */
     transform: translateX(0);
 }
-
 /* Usuário */
-
 .usuario {
     margin-bottom: 55px;
     margin-top: 60px;
@@ -59,9 +51,7 @@
 .usuario i {
     margin-right: 8px;
 }
-
 /* Links do menu */
-
 .menu nav {
     /* faz tds os links caber dentro do menu */
     display: flex;
@@ -70,7 +60,6 @@
      /*espaçamento entre cada elemento  */
     gap: 10px;
 }
-
 /*  os links  */
 .menu nav a {
     display: flex;
@@ -86,34 +75,19 @@
     font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+  
 }
-
 /* Ícones */
-
 .menu nav a i {
     width: 25px;
     /* centraliza os icones */
     text-align: center;
 }
-
 /* Página selecionada */
-
-.menu nav a.ativo {
-    /* faz com q o fundo do link
-     clicado fique um roxo mais claro */
-     /* caso precise deixar outra parte roxinha, faça isso */
-     /* <a href="#" class="ativo">
-            <i class="fa-solid fa-house"></i>
-            Início
-        </a>
- */
- /* apenas modifique como por exemplo
-  colocar no sobre, etc. */
+.menu nav a.user {
     background-color: #8B42E8;
 }
-
 /* Efeito ao passar o mouse */
-
 .menu nav a:hover {
     /* qnd passar o mouse
      vai ficar roxo mais claro */
@@ -124,7 +98,6 @@
 #menu-hamburguer {
     display: none;
 }
-
 /* Botão hambúrguer */
 .btn-menu {
     font-size: 30px;
@@ -137,7 +110,7 @@
     position: fixed;
 
     /* Posiciona o botão */
-    top: 130px;
+    top: 35px;
     left: 20px;
 
     /* Faz o botão aparecer na frente do menu */
@@ -153,6 +126,7 @@
 /* faz com q td fique lado a lado, "menu" | "conteudo"  */
 .pagina {
     display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -172,9 +146,10 @@ header {
     display: flex;
     align-items: center;
     background-color: white;
-      max-width: 100%;
+      max-width: 900px;
     width: 100%;
-    height: 110px;
+    height: 150px;
+    margin: 0 auto;
 }
 
 .nav-header a {
@@ -209,6 +184,7 @@ main {
     color: white;
     padding: 18px;
     border-radius: 8px;
+    width: 70%;
 }
 
 .banner h1 {
@@ -249,7 +225,7 @@ button {
 
 .card {
     background-color: white;
-    width: 50%;
+    width: 40%;
     padding: 18px;
     border-radius: 8px;
     box-shadow:  3px 4px #a7a7a7;
@@ -277,6 +253,7 @@ button {
     border-radius: 8px;
     margin: 15px 10px 30px;
     box-shadow: 0 3px 4px #c69be9;
+    width: 70%;
 }
 
 .funciona h3 {
@@ -297,6 +274,7 @@ button {
     border-radius: 8px;
     margin: 0 10px;
     color: #5425B8;
+    width: 70%;
 }
 
 .aviso h3 {
@@ -354,4 +332,4 @@ header span {
 header p {
     color: #5425B8;
     font-weight: bold;
-}
+} 
