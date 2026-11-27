@@ -157,6 +157,25 @@ header p{
 }
 
 
+.titulo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+}
+
+.titulo-container h2,
+.titulo-container p {
+    margin: 0;
+}
+
+.voltar {
+    font-size: 24px;
+      color: #5425B8;
+      margin-bottom: 27px;
+      margin-right: 0px;
+}
 
 
 
