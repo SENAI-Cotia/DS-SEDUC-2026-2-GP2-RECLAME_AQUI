@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações</title>
+    <link rel="stylesheet" href="../styles/configuracoes.css">
+     <script src="https://kit.fontawesome.com/afb61c2ede.js" crossorigin="anonymous"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
 </head>
 <body>
+  
+    <header>
+            <div class="logo">
+                <img src="../img/logo.png" alt="">
+            </div> 
 
-     <div class="imagem"> 
-        
-        <img src="../img/logo.png" alt="">
-        
-        <div class="perfil">
-            <p>🔔 Meu perfil</p>
-        </div>
-
-    </div>
-
-     <div class="pagina">
+            <nav class="nav-header">
+        <a href="#">🔔</a>
+        <a href="#">Meu perfil</a>
+    </nav>
+    
+        </header>
+    
+    <div class="pagina">
 
     <input type="checkbox" id="menu-hamburguer">
 
@@ -35,7 +42,7 @@
     </div>
 
     <nav>
-        <a href="#" class="ativo">
+        <a href="#">
             <i class="fa-solid fa-house"></i>
             Início
         </a>
@@ -60,7 +67,7 @@
             Meu perfil
         </a>
 
-        <a href="#">
+        <a href="#" class="gear">
             <i class="fa-solid fa-gear"></i>
             Configurações
         </a>
@@ -73,22 +80,88 @@
 
 </div>
 
-       
-    <div class="conteudo">
+    </div>
 
-        
+    <main class="configuracoes">
 
-    <main >
-        <div class="banner">
-                
+        <div class="titulo-config">
+
+    <div class="linha-titulo">
+        <div>
+            <h1>Configurações</h1>
+            <p>Personalize sua conta e gerencie suas preferências</p>
+        </div>
+
+        <a href="#" class="voltar">
+            <i class="fa-solid fa-reply"></i>
+        </a>
+    </div>
+
+</div>
+
+
+    <section class="lista-config">
+
+        <a href="#" class="item-config">
+            <i class="fa-solid fa-user"></i>
+            <div class="texto-config">
+                <h3>Dados pessoais</h3>
+                <p>Altere o nome, e-mail e informações</p>
             </div>
-        <h1>Bem-vindo!</h1>
-        <p>Aqui ficará o conteúdo da página.</p>
-    </main>
+            <i class="fa-solid fa-circle-arrow-right seta"></i>
+        </a>
 
-    </div>
-    </div>
+        <a href="#" class="item-config">
+            <i class="fa-solid fa-lock"></i>
+            <div class="texto-config">
+                <h3>Segurança</h3>
+                <p>Altere sua senha e proteja sua conta</p>
+            </div>
+            <i class="fa-solid fa-circle-arrow-right seta"></i>
+        </a>
 
-    
+        <a href="#" class="item-config">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div class="texto-config">
+                <h3>Privacidade</h3>
+                <p>Controle quem visualiza suas publicações</p>
+            </div>
+            <i class="fa-solid fa-circle-arrow-right seta"></i>
+        </a>
+
+        <a href="#" class="item-config">
+            <i class="fa-solid fa-bell"></i>
+            <div class="texto-config">
+                <h3>Notificações</h3>
+                <p>Escolha seus avisos</p>
+            </div>
+             <i class="fa-solid fa-circle-arrow-right seta"></i>
+        </a>
+
+        <a href="#" class="item-config">
+            <i class="fa-solid fa-palette"></i>
+            <div class="texto-config">
+                <h3>Aparência</h3>
+                <p>Personalize sua experiência visual</p>
+            </div>
+            <i class="fa-solid fa-circle-arrow-right seta"></i>
+        </a>
+
+        <a href="#" class="item-config">
+            <i class="fa-solid fa-ban"></i>
+            <div class="texto-config">
+                <h3>Usuários bloqueados</h3>
+                <p>Gerencie seus bloqueados</p>
+            </div>
+            <i class="fa-solid fa-circle-arrow-right seta"></i>
+        </a>
+
+    </section>
+
+    <a href="#" class="sair-conta">Sair da conta</a>
+
+</main>
+</body>
+</html>
 </body>
 </html>
