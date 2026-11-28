@@ -265,20 +265,6 @@ header {
     justify-content: center;
 }
 
-/* Sair da conta */
-.sair-conta {
-    display: inline-block;
-    color: #FF7139;
-    font-family: "Poppins", sans-serif;
-    font-size: 10px;
-    text-decoration: none;
-    margin-top: 12px;
-}
-
-.sair-conta:hover {
-    text-decoration: underline;
-}
-
 .linha-titulo {
     display: flex;
     align-items: center;
